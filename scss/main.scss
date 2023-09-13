@@ -1,0 +1,41 @@
+@import "./table.css";
+@import "./contact.css";
+@import "./variables.scss";
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: $background-color;
+}
+
+header {
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.quote {
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 80%;
+}
+
+@media (max-width: 968px) {
+  footer {
+    font-size: 50%;
+  }
+}
